@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b9fc5ff0a7d106458257629549a3604, type: 3}
+  m_Name: GameSettings
+  m_EditorClassIdentifier: 
+  Player:
+    PlayerMoveSettings:
+      SpeedMove: 3
+      SpeedRotation: 3
+  Enemy:
+    Settings:
+      HP: 1000
+    StateBurning:
+      BonusDamage: 10
+      DelayBurning: 1
+      DamageBurning: 5
+      DurationBurning: 10
+    StateWetness:
+      ReduceDamage: 10
+      ReduceWetness: 1
+      MaxCountWetness: 100
+  Weapons:
+    FireBallSettings:
+      DelayShoot: 1
+      prefubBullet: {fileID: 0}
+      MinimumLifeTime: 1
+    WaterBallSettings:
+      DelayShoot: 1
+      prefubBullet: {fileID: 387379699274654420, guid: c706e64f28785fd4aab8c2a94087f381, type: 3}
+    GunSettings:
+      DelayShoot: 0.3
+      prefubBullet: {fileID: 2426306226043711612, guid: 51ecf50a8bf45bd489a6722c9c1ecefe, type: 3}
+  Bullets:
+    FireBulletSettings:
+      Damage: 1
+      TimeLife: 1
+      SpeedBullet: 0
+    WaterBulletSettings:
+      Damage: 0
+      TimeLife: 3
+      SpeedBullet: 6
+      CountWetness: 10
+      PowerForce: 200
+    GunBulletSettings:
+      Damage: 20
+      TimeLife: 3
+      SpeedBullet: 12.43
+  GlobalSettings:
+    prefubGun: {fileID: 1128175310469559912, guid: c41c9200b3fe2ef4c97768a873b441e7, type: 3}
+    prefubWaterStone: {fileID: 138702783556852488, guid: a42fea74f7648174a9eed7ed746a5acc, type: 3}
+    prefubFireStone: {fileID: 3260098212804783558, guid: f126ad61a89be1b4ea02884edca0f2ed, type: 3}
+    prefubLoot: {fileID: 3496134145053551414, guid: ea10146f994aa1d4fb4cf1907c4a3420, type: 3}
